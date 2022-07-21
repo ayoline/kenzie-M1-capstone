@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: scroll;
+}
+
+.menu {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+  top: 0px;
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1370px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto auto;
+}
+
+.menu-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-flex h1 {
+  font-weight: 700;
+}
+
+.menu-second-column {
+  cursor: pointer;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.menu-link-button {
+  color: #242424;
+  display: flex;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.menu-link-button:hover {
+  font-weight: 600;
+}
+
+.all-boxes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+  margin-top: 110px;
+  justify-content: space-between;
+}
+
+.main-box {
+  width: 76%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  gap: 20px 45px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 296px;
+  height: 408px;
+  border: solid #F5F5F5 4px;
+}
+
+.card:hover {
+  border: solid #37268C 4px;
+}
+
+.card-img {
+  width: 100%;
+  height: 154px;
+  background-color: #F5F5F5;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 15px;
+}
+
+.card-tag {
+  width: fit-content;
+  height: 24px;
+  padding: 5px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2E245E;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.card-description {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-price {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-add-to-cart {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card-add-to-cart:hover {
+  text-decoration: underline;
+}
+
+.aside-box {
+  width: 24%;
+  height: fit-content;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside-search-box {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.aside-input-search {
+  width: 100%;
+  height: 52px;
+  font-size: 14px;
+  padding: 14px;
+  font-weight: 400;
+  border: none;
+  background-color: #F5F5F5;
+}
+
+.aside-btn-search {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 500;
+  width: 96px;
+  border: none;
+  background-color: #2E245E;
+}
+
+.aside-box-cart {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+}
+
+.aside-card-img {
+  width: 88px;
+}
+
+.aside-title-cart {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 13px;
+  color: #ffffff;
+  background-color: #37268C;
+}
+
+.aside-card-box {
+  width: 100%;
+  height: 92px;
+  display: flex;
+  gap: 18px;
+  flex-direction: row;
+  border: solid transparent 3px
+}
+
+.aside-card-box:hover {
+  border: solid #2E245E 3px;
+}
+
+.aside-card-body {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.aside-card-price {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.aside-card-remove {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.aside-card-remove:hover {
+  color: red;
+}
+
+.aside-content-box {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 28px 14px;
+  overflow-y: auto;
+}
+
+.aside-quantity-box {
+  width: 100%;
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #292929;
+}
+
+.aside-quantity-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aside-total-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aside-quantity-value {
+  font-weight: 400;
+}
+
+.aside-total-value {
+  font-weight: 400;
+}
